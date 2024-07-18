@@ -1,0 +1,247 @@
+\hypertarget{Kitchen_8cpp}{}\doxysection{src/\+Kitchen.cpp File Reference}
+\label{Kitchen_8cpp}\index{src/Kitchen.cpp@{src/Kitchen.cpp}}
+
+
+Kitchen class file.  
+
+
+{\ttfamily \#include \char`\"{}../include/\+Kitchen.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{Kitchen_8cpp_a30dd8e3770f64ebb96349a37ef8b44be}{display\+Order\+Finished}} (Kitchen $\ast$kitchen, int i)
+\begin{DoxyCompactList}\small\item\em display the finished order \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Kitchen_8cpp_af16533983558629dcce63a4d825db980}{Order\+Finished\+Move\+Vector}} (order\+Finished order, Kitchen $\ast$kitchen, int i)
+\begin{DoxyCompactList}\small\item\em If the order is finished move it to the finished vector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Kitchen_8cpp_a8ef6c2e52caaf2b9def27ba99963affd}{add\+Result\+To\+Vector}} (order\+Finished order, Kitchen $\ast$kitchen, int i)
+\begin{DoxyCompactList}\small\item\em add Result to order \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Kitchen_8cpp_a861a446d798bbc7c20029cf9eee23c66}{remove\+Kitchen}} (Kitchen $\ast$kitchen, int id)
+\begin{DoxyCompactList}\small\item\em Remove Kitchen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Kitchen_8cpp_a4c73b8aa1ccf898b347a797ff37ca1ef}{Recv\+Kitchen}} (IPC $\ast$ipc\+To\+Kit, Kitchen $\ast$kitchen)
+\begin{DoxyCompactList}\small\item\em Recieve the kitchen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Kitchen_8cpp_af9e5a8f2c9712036de8f9637d9ca882a}{new\+Thread\+Pool}} (IPC $\ast$ipc\+To\+Kit, Kitchen $\ast$kitchen)
+\begin{DoxyCompactList}\small\item\em Create a new Thread Pool object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Kitchen_8cpp_a4f295b9d8e997d1e33b6cb6dc16ac4e9}{send\+Order\+To\+The\+Kitchens}} (Kitchen $\ast$kitchen, pizza\+\_\+t \&order)
+\begin{DoxyCompactList}\small\item\em Sennnd the order to the kitchen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Kitchen_8cpp_a3375e4322563a013aeb69b4e5f34403c}{process\+Kitchen}} (IPC $\ast$ipc\+To\+Kit, Kitchen $\ast$kitchen, pizza\+\_\+t order)
+\begin{DoxyCompactList}\small\item\em Process the kitchen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Kitchen_8cpp_a5b9284fa8bb9963fc95f462f0ec10e7e}{display\+Status}} (Kitchen $\ast$kitchen)
+\begin{DoxyCompactList}\small\item\em Display the status of the kitchen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Kitchen_8cpp_aaee503e011cbd1f36bc140cfcd5c2adc}{reception\+Messages}} (IPC $\ast$ipc, IPC $\ast$ipc\+To\+Kit, Kitchen $\ast$kitchen)
+\begin{DoxyCompactList}\small\item\em Reception of the messages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kitchen class file. 
+
+\begin{DoxyDate}{Date}
+2023-\/05-\/29 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Kitchen_8cpp_a8ef6c2e52caaf2b9def27ba99963affd}\label{Kitchen_8cpp_a8ef6c2e52caaf2b9def27ba99963affd}} 
+\index{Kitchen.cpp@{Kitchen.cpp}!addResultToVector@{addResultToVector}}
+\index{addResultToVector@{addResultToVector}!Kitchen.cpp@{Kitchen.cpp}}
+\doxysubsubsection{\texorpdfstring{addResultToVector()}{addResultToVector()}}
+{\footnotesize\ttfamily int add\+Result\+To\+Vector (\begin{DoxyParamCaption}\item[{order\+Finished}]{order,  }\item[{Kitchen $\ast$}]{kitchen,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+add Result to order 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & \\
+\hline
+{\em kitchen} & \\
+\hline
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Kitchen_8cpp_a30dd8e3770f64ebb96349a37ef8b44be}\label{Kitchen_8cpp_a30dd8e3770f64ebb96349a37ef8b44be}} 
+\index{Kitchen.cpp@{Kitchen.cpp}!displayOrderFinished@{displayOrderFinished}}
+\index{displayOrderFinished@{displayOrderFinished}!Kitchen.cpp@{Kitchen.cpp}}
+\doxysubsubsection{\texorpdfstring{displayOrderFinished()}{displayOrderFinished()}}
+{\footnotesize\ttfamily int display\+Order\+Finished (\begin{DoxyParamCaption}\item[{Kitchen $\ast$}]{kitchen,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+display the finished order 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kitchen} & \\
+\hline
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Kitchen_8cpp_a5b9284fa8bb9963fc95f462f0ec10e7e}\label{Kitchen_8cpp_a5b9284fa8bb9963fc95f462f0ec10e7e}} 
+\index{Kitchen.cpp@{Kitchen.cpp}!displayStatus@{displayStatus}}
+\index{displayStatus@{displayStatus}!Kitchen.cpp@{Kitchen.cpp}}
+\doxysubsubsection{\texorpdfstring{displayStatus()}{displayStatus()}}
+{\footnotesize\ttfamily int display\+Status (\begin{DoxyParamCaption}\item[{Kitchen $\ast$}]{kitchen }\end{DoxyParamCaption})}
+
+
+
+Display the status of the kitchen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kitchen} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Kitchen_8cpp_af9e5a8f2c9712036de8f9637d9ca882a}\label{Kitchen_8cpp_af9e5a8f2c9712036de8f9637d9ca882a}} 
+\index{Kitchen.cpp@{Kitchen.cpp}!newThreadPool@{newThreadPool}}
+\index{newThreadPool@{newThreadPool}!Kitchen.cpp@{Kitchen.cpp}}
+\doxysubsubsection{\texorpdfstring{newThreadPool()}{newThreadPool()}}
+{\footnotesize\ttfamily int new\+Thread\+Pool (\begin{DoxyParamCaption}\item[{IPC $\ast$}]{ipc\+To\+Kit,  }\item[{Kitchen $\ast$}]{kitchen }\end{DoxyParamCaption})}
+
+
+
+Create a new Thread Pool object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ipc\+To\+Kit} & \\
+\hline
+{\em kitchen} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Kitchen_8cpp_af16533983558629dcce63a4d825db980}\label{Kitchen_8cpp_af16533983558629dcce63a4d825db980}} 
+\index{Kitchen.cpp@{Kitchen.cpp}!OrderFinishedMoveVector@{OrderFinishedMoveVector}}
+\index{OrderFinishedMoveVector@{OrderFinishedMoveVector}!Kitchen.cpp@{Kitchen.cpp}}
+\doxysubsubsection{\texorpdfstring{OrderFinishedMoveVector()}{OrderFinishedMoveVector()}}
+{\footnotesize\ttfamily int Order\+Finished\+Move\+Vector (\begin{DoxyParamCaption}\item[{order\+Finished}]{order,  }\item[{Kitchen $\ast$}]{kitchen,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+If the order is finished move it to the finished vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & \\
+\hline
+{\em kitchen} & \\
+\hline
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Kitchen_8cpp_a3375e4322563a013aeb69b4e5f34403c}\label{Kitchen_8cpp_a3375e4322563a013aeb69b4e5f34403c}} 
+\index{Kitchen.cpp@{Kitchen.cpp}!processKitchen@{processKitchen}}
+\index{processKitchen@{processKitchen}!Kitchen.cpp@{Kitchen.cpp}}
+\doxysubsubsection{\texorpdfstring{processKitchen()}{processKitchen()}}
+{\footnotesize\ttfamily int process\+Kitchen (\begin{DoxyParamCaption}\item[{IPC $\ast$}]{ipc\+To\+Kit,  }\item[{Kitchen $\ast$}]{kitchen,  }\item[{pizza\+\_\+t}]{order }\end{DoxyParamCaption})}
+
+
+
+Process the kitchen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ipc\+To\+Kit} & \\
+\hline
+{\em kitchen} & \\
+\hline
+{\em order} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Kitchen_8cpp_aaee503e011cbd1f36bc140cfcd5c2adc}\label{Kitchen_8cpp_aaee503e011cbd1f36bc140cfcd5c2adc}} 
+\index{Kitchen.cpp@{Kitchen.cpp}!receptionMessages@{receptionMessages}}
+\index{receptionMessages@{receptionMessages}!Kitchen.cpp@{Kitchen.cpp}}
+\doxysubsubsection{\texorpdfstring{receptionMessages()}{receptionMessages()}}
+{\footnotesize\ttfamily void reception\+Messages (\begin{DoxyParamCaption}\item[{IPC $\ast$}]{ipc,  }\item[{IPC $\ast$}]{ipc\+To\+Kit,  }\item[{Kitchen $\ast$}]{kitchen }\end{DoxyParamCaption})}
+
+
+
+Reception of the messages. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ipc} & \\
+\hline
+{\em ipc\+To\+Kit} & \\
+\hline
+{\em kitchen} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Kitchen_8cpp_a4c73b8aa1ccf898b347a797ff37ca1ef}\label{Kitchen_8cpp_a4c73b8aa1ccf898b347a797ff37ca1ef}} 
+\index{Kitchen.cpp@{Kitchen.cpp}!RecvKitchen@{RecvKitchen}}
+\index{RecvKitchen@{RecvKitchen}!Kitchen.cpp@{Kitchen.cpp}}
+\doxysubsubsection{\texorpdfstring{RecvKitchen()}{RecvKitchen()}}
+{\footnotesize\ttfamily int Recv\+Kitchen (\begin{DoxyParamCaption}\item[{IPC $\ast$}]{ipc\+To\+Kit,  }\item[{Kitchen $\ast$}]{kitchen }\end{DoxyParamCaption})}
+
+
+
+Recieve the kitchen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ipc\+To\+Kit} & \\
+\hline
+{\em kitchen} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Kitchen_8cpp_a861a446d798bbc7c20029cf9eee23c66}\label{Kitchen_8cpp_a861a446d798bbc7c20029cf9eee23c66}} 
+\index{Kitchen.cpp@{Kitchen.cpp}!removeKitchen@{removeKitchen}}
+\index{removeKitchen@{removeKitchen}!Kitchen.cpp@{Kitchen.cpp}}
+\doxysubsubsection{\texorpdfstring{removeKitchen()}{removeKitchen()}}
+{\footnotesize\ttfamily int remove\+Kitchen (\begin{DoxyParamCaption}\item[{Kitchen $\ast$}]{kitchen,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Remove Kitchen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kitchen} & \\
+\hline
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Kitchen_8cpp_a4f295b9d8e997d1e33b6cb6dc16ac4e9}\label{Kitchen_8cpp_a4f295b9d8e997d1e33b6cb6dc16ac4e9}} 
+\index{Kitchen.cpp@{Kitchen.cpp}!sendOrderToTheKitchens@{sendOrderToTheKitchens}}
+\index{sendOrderToTheKitchens@{sendOrderToTheKitchens}!Kitchen.cpp@{Kitchen.cpp}}
+\doxysubsubsection{\texorpdfstring{sendOrderToTheKitchens()}{sendOrderToTheKitchens()}}
+{\footnotesize\ttfamily bool send\+Order\+To\+The\+Kitchens (\begin{DoxyParamCaption}\item[{Kitchen $\ast$}]{kitchen,  }\item[{pizza\+\_\+t \&}]{order }\end{DoxyParamCaption})}
+
+
+
+Sennnd the order to the kitchen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kitchen} & \\
+\hline
+{\em order} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}

@@ -1,0 +1,141 @@
+\hypertarget{Utils_8cpp}{}\doxysection{src/\+Utils.cpp File Reference}
+\label{Utils_8cpp}\index{src/Utils.cpp@{src/Utils.cpp}}
+
+
+Utils class file.  
+
+
+{\ttfamily \#include \char`\"{}../include/\+Utils.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{Utils_8cpp_afb0c6159fe7e64623d29e9b9d0594683}{check\+\_\+number}} (char $\ast$value, int add\+\_\+dot)
+\begin{DoxyCompactList}\small\item\em Check if the string is a number. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Utils_8cpp_a4cbc1363f1a48410441bdc4d9cae5935}{check\+\_\+letters}} (char $\ast$value)
+\begin{DoxyCompactList}\small\item\em Check if the string is a letter. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{Utils_8cpp_a94899ff7b83db4cce2465362760a7c65}{split}} (std\+::string str, char delim)
+\begin{DoxyCompactList}\small\item\em Split a string with a delimiter. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Utils_8cpp_a2b2a12acc35d609068e761bf28d0a4da}{Generate\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Generate an ID. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{Utils_8cpp_a6e4aa4527540a8d0fac2ddc3c7134b5d}{get\+Type}} (int type)
+\begin{DoxyCompactList}\small\item\em Get the Type object (of the pizza) \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{Utils_8cpp_a9011d5f7ce6c33b9cc0c07a92e5fc848}{get\+Size}} (int size)
+\begin{DoxyCompactList}\small\item\em Get the Size object (of the pizza) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utils class file. 
+
+\begin{DoxyDate}{Date}
+2020-\/04-\/11 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Utils_8cpp_a4cbc1363f1a48410441bdc4d9cae5935}\label{Utils_8cpp_a4cbc1363f1a48410441bdc4d9cae5935}} 
+\index{Utils.cpp@{Utils.cpp}!check\_letters@{check\_letters}}
+\index{check\_letters@{check\_letters}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{check\_letters()}{check\_letters()}}
+{\footnotesize\ttfamily int check\+\_\+letters (\begin{DoxyParamCaption}\item[{char $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Check if the string is a letter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utils_8cpp_afb0c6159fe7e64623d29e9b9d0594683}\label{Utils_8cpp_afb0c6159fe7e64623d29e9b9d0594683}} 
+\index{Utils.cpp@{Utils.cpp}!check\_number@{check\_number}}
+\index{check\_number@{check\_number}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{check\_number()}{check\_number()}}
+{\footnotesize\ttfamily int check\+\_\+number (\begin{DoxyParamCaption}\item[{char $\ast$}]{value,  }\item[{int}]{add\+\_\+dot }\end{DoxyParamCaption})}
+
+
+
+Check if the string is a number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+{\em add\+\_\+dot} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utils_8cpp_a2b2a12acc35d609068e761bf28d0a4da}\label{Utils_8cpp_a2b2a12acc35d609068e761bf28d0a4da}} 
+\index{Utils.cpp@{Utils.cpp}!GenerateID@{GenerateID}}
+\index{GenerateID@{GenerateID}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{GenerateID()}{GenerateID()}}
+{\footnotesize\ttfamily int Generate\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generate an ID. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utils_8cpp_a9011d5f7ce6c33b9cc0c07a92e5fc848}\label{Utils_8cpp_a9011d5f7ce6c33b9cc0c07a92e5fc848}} 
+\index{Utils.cpp@{Utils.cpp}!getSize@{getSize}}
+\index{getSize@{getSize}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily const char$\ast$ get\+Size (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Get the Size object (of the pizza) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const char$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utils_8cpp_a6e4aa4527540a8d0fac2ddc3c7134b5d}\label{Utils_8cpp_a6e4aa4527540a8d0fac2ddc3c7134b5d}} 
+\index{Utils.cpp@{Utils.cpp}!getType@{getType}}
+\index{getType@{getType}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily const char$\ast$ get\+Type (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Get the Type object (of the pizza) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const char$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utils_8cpp_a94899ff7b83db4cce2465362760a7c65}\label{Utils_8cpp_a94899ff7b83db4cce2465362760a7c65}} 
+\index{Utils.cpp@{Utils.cpp}!split@{split}}
+\index{split@{split}!Utils.cpp@{Utils.cpp}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ split (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{char}]{delim }\end{DoxyParamCaption})}
+
+
+
+Split a string with a delimiter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & \\
+\hline
+{\em delim} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::string$>$ 
+\end{DoxyReturn}
